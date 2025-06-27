@@ -22,7 +22,17 @@
 		<sonar.exclusions>**/*.css</sonar.exclusions>
 	</properties>
 
-    
+    <distributionManagement>
+    <repository>
+    <id>nexus</id>
+    <url>http://174.129.163.87:8081/repository/RushiTech-release/</url>
+    </repository>
+    <snapshotRepository>
+    <id>nexus</id>
+    <url>http://174.129.163.87:8081/repository/Rushitech-snapshot/</url>
+    </snapshotRepository>
+    </distributionManagement> 
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
